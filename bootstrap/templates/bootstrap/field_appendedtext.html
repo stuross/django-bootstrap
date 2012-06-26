@@ -1,4 +1,4 @@
-<div id="div_{{ label_id }}" class="control-group{% if errors %} error{% endif %}">
+<div id="div_{{ label_id }}" class="control-group{% if errors %} error{% endif %}{% if field.required %} control-group-required{% endif %}">
     <label class="control-label" for="{{ label_id }}">{{ label }}</label>
     <div class="controls">
         <div class="input-append">
