@@ -131,7 +131,7 @@ class BootstrapMixin(object):
                 'bf_raw' : bf,
                 'errors' : mark_safe(bf_errors),
                 'field_type' : mark_safe(field.__class__.__name__),
-                'label_id': bf._auto_id(),
+                'label_id': bf.auto_id,
             }
 
             if self.custom_fields.has_key(field):
